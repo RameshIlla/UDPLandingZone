@@ -1,0 +1,35 @@
+subscriptions:
+  gitops:
+    caf_landingzone_branch: 2203.0
+
+  relative_destination_folder: level1/subscriptions
+
+  tfstate:
+    lz_key_name: subscriptions
+    tfstate: platform_subscriptions.tfstate
+    level: level1
+    identity_aad_key: cred_subscription_creation_platform
+    config_file: subscriptions.yaml
+    sub_template_folder: platform/level1/subscriptions
+    # Do not rename the tfstate_key_name
+    tfstate_key_name: subscriptions
+
+  resources:
+    subscriptions:
+      subscriptions:
+        launchpad:
+          name: Visual Studio Premium with MSDN
+          create_alias: false
+          subscription_id: 4de3e0bf-877e-411c-ba67-a83e25934334
+        identity:
+          name: Visual Studio Premium with MSDN
+          create_alias: false
+          subscription_id: 4de3e0bf-877e-411c-ba67-a83e25934334
+        connectivity:
+          name: Visual Studio Premium with MSDN
+          create_alias: false
+          subscription_id: 4de3e0bf-877e-411c-ba67-a83e25934334
+        management:
+          name: Visual Studio Premium with MSDN
+          create_alias: false
+          subscription_id: 4de3e0bf-877e-411c-ba67-a83e25934334
