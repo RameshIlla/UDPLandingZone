@@ -57,7 +57,7 @@ diagnostics_definition = {
 
 data_factory = {
   df1 = {
-    name = "example"
+    name = "df-udp-databricks"
     resource_group = {
       key = "rg1"
       #lz_key = ""

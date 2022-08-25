@@ -12,7 +12,7 @@ resource_groups = {
 }
 data_factory = {
   df1 = {
-    name = "example"
+    name = "df-udp-databricks"
     resource_group = {
       key = "rg1"
       #lz_key = ""
@@ -82,7 +82,7 @@ data_factory_dataset_azure_blob = {
       #name = ""
     }
 
-    path     = "foo"
-    filename = "bar.png"
+    path = "raw"
+    #filename = "bar.png"
   }
 }

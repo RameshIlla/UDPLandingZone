@@ -12,7 +12,7 @@ resource_groups = {
 }
 data_factory = {
   df1 = {
-    name = "example"
+    name = "df-udp-databricks"
     resource_group = {
       key = "rg1"
       #lz_key = ""
@@ -22,7 +22,7 @@ data_factory = {
 }
 data_factory_pipeline = {
   dfp1 = {
-    name = "example"
+    name = "pipeline_ingest_data"
     resource_group = {
       key = "rg1"
       #lz_key = ""
