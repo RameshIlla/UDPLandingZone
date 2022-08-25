@@ -19,8 +19,8 @@ default_region = "region1"
 
 # You can reference the regions by using region1, region2 or set your own keys
 regions = {
-  region1 = "southeastasia"
-  region2 = "australiaeast"
+  region1 = "australiaeast"
+  region2 = "southeastasia"
 }
 
 # Rover will adjust some tags to enable the discovery of the launchpad.

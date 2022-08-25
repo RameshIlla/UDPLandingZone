@@ -21,19 +21,6 @@ rover \
   -p ${TF_DATA_DIR}/management.tfstate.tfplan \
   -a plan
 
-
-  rover \
-  --impersonate-sp-from-keyvault-url https://udp-kv-mg-xcx.vault.azure.net/ \
-  -lz /tf/caf/landingzones/caf_solution \
-  -var-folder /tf/caf/configuration/level1/management \
-  -tfstate_subscription_id 4de3e0bf-877e-411c-ba67-a83e25934334 \
-  -target_subscription 4de3e0bf-877e-411c-ba67-a83e25934334 \
-  -tfstate management.tfstate \
-  -env udp \
-  -level level1 \
-  -p ${TF_DATA_DIR}/management.tfstate.tfplan \
-  -a apply
-
 ```
 
 

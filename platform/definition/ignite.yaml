@@ -16,7 +16,7 @@ caf_environment: udp
 default_email_address: v-rameshilla@microsoft.com
 alz_mg_prefix: mgudp
 alz_mg_name: mgudp
-azure_regions: {'region1': 'southeastasia', 'region2': 'australiaeast'}
+azure_regions: {'region1': 'australiaeast', 'region2': 'southeastasia'}
 prefix: udp
 
 # folder parameters
@@ -32,8 +32,8 @@ deployment_mode: platform
 caf_landingzone_branch: 2203.0
 
 caf_regions:
-  region1: southeastasia
-  region2: australiaeast
+  region1: australiaeast
+  region2: southeastasia
 
 # Use the lower-case region's name, short version with no space
 resources_allowed_regions:

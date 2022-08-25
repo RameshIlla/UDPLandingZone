@@ -8,6 +8,7 @@ Set-up the subscription delegations for platform and landingzone subscriptions
 rover login -t rameshillahotmail.onmicrosoft.com -s 4de3e0bf-877e-411c-ba67-a83e25934334
 
 rover \
+  --impersonate-sp-from-keyvault-url https://udp-kv-scp-gdu.vault.azure.net/ \
   -lz /tf/caf/landingzones/caf_solution \
   -var-folder /tf/caf/configuration/level1/subscriptions \
   -tfstate_subscription_id 4de3e0bf-877e-411c-ba67-a83e25934334 \
@@ -18,15 +19,6 @@ rover \
   -a plan
 
 ```
-rover \
-  -lz /tf/caf/landingzones/caf_solution \
-  -var-folder /tf/caf/configuration/level1/subscriptions \
-  -tfstate_subscription_id 4de3e0bf-877e-411c-ba67-a83e25934334 \
-  -tfstate platform_subscriptions.tfstate \
-  -env udp \
-  -level level1 \
-  -p ${TF_DATA_DIR}/platform_subscriptions.tfstate.tfplan \
-  -a apply
 
 
 # Next steps

@@ -1,20 +1,20 @@
 global_settings = {
-  default_region = "region2"
+  default_region = "region1"
   regions = {
-    region1 = "eastus"
+    region1 = "australiaeast"
   }
 }
 
 resource_groups = {
   aks_re1 = {
     name   = "aks-re1"
-    region = "region2"
+    region = "region1"
   }
 }
 
 aks_clusters = {
   cluster_re1 = {
-    name = "akscluster-udp-airflow"
+    name = "airflow"
     #name               = "akscluster-re1-001"
     resource_group_key = "aks_re1"
     os_type            = "Linux"
